@@ -1,7 +1,7 @@
 ﻿using System;
 using Avalonia;
 
-namespace AvaloniaBaseTemplate
+namespace AvaloniaChess
 {
     internal class Program
     {

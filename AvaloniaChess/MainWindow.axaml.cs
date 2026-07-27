@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace AvaloniaBaseTemplate
+namespace AvaloniaChess
 {
     public partial class MainWindow : Window
     {

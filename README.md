@@ -1,5 +1,5 @@
-# Avalonia UI ~ Base Project Template
-This is a generic repository with a basic project template for [Avalonia UI](https://avaloniaui.net) desktop apps.</br>
+# Avalonia Chess
+A simple 2-players chess game built with [Avalonia UI](https://avaloniaui.net).</br>
 This project is currently using version **12.1.0** of Avalonia UI.
 
 ## Requirements
