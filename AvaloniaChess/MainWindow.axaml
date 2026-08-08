@@ -9,15 +9,84 @@
         Width="1280" Height="720"
         CanResize="False">
 
-	<StackPanel VerticalAlignment="Center">
-		<TextBlock HorizontalAlignment="Center" Margin="0,20,0,20" FontSize="36" FontWeight="Bold">
-			Hello!
-		</TextBlock>
-		<TextBlock HorizontalAlignment="Center" Margin="0,20,0,20" FontSize="24" >
-			This is a simple template project for Avalonia UI desktop apps.
-		</TextBlock>
-		<TextBlock HorizontalAlignment="Center" Margin="0,20,0,20" FontSize="24">
-			Feel free to modify it as you need.
-		</TextBlock>
-	</StackPanel>
+	<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="640"/>
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="30"/>
+			<ColumnDefinition Width="640"/>
+			<ColumnDefinition Width="30"/>
+		</Grid.ColumnDefinitions>
+
+		<!-- Top Labels -->
+		<UniformGrid Grid.Row="0" Grid.Column="1" Rows="1" Columns="8">
+			<TextBlock Text="A" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+			<TextBlock Text="B" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+			<TextBlock Text="C" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+			<TextBlock Text="D" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+			<TextBlock Text="E" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+			<TextBlock Text="F" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+			<TextBlock Text="G" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+			<TextBlock Text="H" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontWeight="Bold"/>
+		</UniformGrid>
+
+		<!-- Bottom Labels -->
+		<UniformGrid Grid.Row="2" Grid.Column="1" Rows="1" Columns="8">
+			<TextBlock Text="A" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+			<TextBlock Text="B" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+			<TextBlock Text="C" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+			<TextBlock Text="D" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+			<TextBlock Text="E" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+			<TextBlock Text="F" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+			<TextBlock Text="G" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+			<TextBlock Text="H" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" FontWeight="Bold"/>
+		</UniformGrid>
+
+		<!-- Left Labels -->
+		<UniformGrid Grid.Row="1" Grid.Column="0" Rows="8" Columns="1">
+			<TextBlock Text="8" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+			<TextBlock Text="7" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+			<TextBlock Text="6" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+			<TextBlock Text="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+			<TextBlock Text="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+			<TextBlock Text="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+			<TextBlock Text="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+			<TextBlock Text="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+		</UniformGrid>
+
+		<!-- Right Labels -->
+		<UniformGrid Grid.Row="1" Grid.Column="2" Rows="8" Columns="1">
+			<TextBlock Text="8" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+			<TextBlock Text="7" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+			<TextBlock Text="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+			<TextBlock Text="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+			<TextBlock Text="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+			<TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+			<TextBlock Text="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+			<TextBlock Text="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold"/>
+		</UniformGrid>
+
+		<!-- Board -->
+		<UniformGrid Grid.Row="1" Grid.Column="1" Rows="8" Columns="8">
+			<!-- Row 8 -->
+			<Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/>
+			<!-- Row 7 -->
+			<Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/>
+			<!-- Row 6 -->
+			<Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/>
+			<!-- Row 5 -->
+			<Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/>
+			<!-- Row 4 -->
+			<Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/>
+			<!-- Row 3 -->
+			<Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/>
+			<!-- Row 2 -->
+			<Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/>
+			<!-- Row 1 -->
+			<Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/>
+		</UniformGrid>
+	</Grid>
 </Window>
