@@ -53,10 +53,12 @@ cd $SHELL_PATH
 
 # Build project
 for file in *.sln; do
+    dotnet clean
+    dotnet restore
     dotnet msbuild "-t:Restore;Rebuild" "-p:Configuration=Release;RuntimeIdentifier=$runtime_id;PlatformTarget=$target_id" "$file"
-	break
+    break
 done
 
 # End
 read -n 1 -p "* Press any key to exit *" -s null
-echo ""
+echo -e "\n"
