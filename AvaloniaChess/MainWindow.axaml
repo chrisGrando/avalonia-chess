@@ -70,7 +70,7 @@
 		</UniformGrid>
 
 		<!-- Board -->
-		<UniformGrid Grid.Row="1" Grid.Column="1" Rows="8" Columns="8">
+		<UniformGrid x:Name="ChessBoardGrid" Grid.Row="1" Grid.Column="1" Rows="8" Columns="8">
 			<!-- Row 8 -->
 			<Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/> <Panel Background="Pink"/> <Panel Background="Cyan"/>
 			<!-- Row 7 -->
