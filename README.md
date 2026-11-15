@@ -137,3 +137,9 @@ dotnet publish AvaloniaChess/AvaloniaChess.csproj -c Release -r win-x64 --self-c
    ./unix_builder.sh
    ```
 4. Enter your desired target platform option ID.
+   - `[1]` Windows X64
+   - `[2]` Windows ARM64
+   - `[3]` Linux X64
+   - `[4]` Linux ARM64
+   - `[5]` MacOSX X64
+   - `[6]` MacOSX ARM64
